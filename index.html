@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>POKEAPI</title>
+</head>
+
+<body class="bg-[url('./img/fundo_branco.webp')] font-['Montserrat'] flex justify-center">
+
+    <section class="container flex justify-center mt-5">
+        <div class="pokedex w-120 h-150 rounded-[4px]">
+            <div class="flex items-center justify-between text-center mt-5">
+                <div class="flex items-center">
+                    <button class="w-15 h-15 bg-blue-300 rounded-full ml-5"></button>
+                    <button class="w-5 h-5 bg-red-900 rounded-full ml-5"></button>
+                    <button class="w-5 h-5 bg-amber-300 rounded-full ml-5"></button>
+                    <button class="w-5 h-5 bg-green-500 rounded-full ml-5"></button>
+                </div>
+
+                <img src="./img/logo.png" width="130" class="mr-5" />
+            </div>
+
+            <div class="flex items-center">
+                <div class="w-110 h-100 rounded-[4px] bg-white m-5">
+                    <ul class="scrollable">
+
+                        <!-- <img class="img-pokemon" src="" alt="">
+                        <p class="name-pokemon"></p> -->
+
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-between ml-5 mr-5 mb-5 mt-3">
+                <button
+                    class="control-pokedex w-35 h-10 bg-green-400 rounded-full text-white cursor-pointer">search</button>
+                <div class="hear bg-white rounded-full w-65 flex items-center">
+
+                    <!-- <p class="field-name-pokemon ml-4"></p> -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="./js/script.js"></script>
+
+</html>

@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+.pokedex{
+    box-shadow: 7px 6px 5px #7f7f7f;
+    background-color: rgba(175, 0, 0, 0.701);
+}
+
+.scrollable {
+    width: 430px;
+    height: 390px;
+    overflow: auto;/* ativa o scroll quando necessário */
+}
+
+ul {
+    list-style: none;
+    display: grid; 
+    grid-template-columns: 130px 130px 130px; /*definir quantas linhas e colunas desejamos ter no layout*/
+    grid-auto-rows: 135px;
+    justify-content: center;
+    gap: 5px;
+    margin: 5px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.name-pokemon{
+    font-size: 12px;
+    color: rgb(106, 0, 0);
+}
