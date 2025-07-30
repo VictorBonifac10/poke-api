@@ -10,7 +10,7 @@ Projeto de Pokédex desenvolvido com foco na integração com API pública, perm
 ## ✨ Recursos
 
 - HTML5
-- CSS3 
+- TailwindCSS
 - JavaScript
 - Consumo de API
 - Design responsivo
