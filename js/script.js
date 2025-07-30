@@ -10,18 +10,21 @@ async function showAll() {
         const data = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151').then(response => response.json())
         const pokemons = data.results;
 
-        pokemons.forEach(async (pokemon, index) => {
+        let index = 0;
 
-            const res = await fetch(pokemon.url); //pacote (resposta bruta)
-            const details = await res.json(); //pacote aberto com os dados (objeto S)
+        for (const pokemon of pokemons) {
+            const res = await fetch(pokemon.url);
+            const details = await res.json();
 
             show.innerHTML += `
                 <li>
                     <img class="img-pokemon" src="${details.sprites.front_default}">
-                    <p class="name-pokemon">#${index + 1} - ${details.name}</p>
+                    <p class="name-pokemon">#${details.id} - ${details.name}</p>
                 </li>
-            `
-        });
+            `;
+
+            index++;
+        }
 
     } catch (err) {
         console.error('Ocorreu um erro:', err);
